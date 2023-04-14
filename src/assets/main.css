@@ -1,7 +1,7 @@
 @import './base.css';
 
 body{
-  background-color: rgb(123, 177, 187);
+  background-color:rgba(0, 0, 0, 0.93);
 }
 #app {
   max-width: 1280px;
