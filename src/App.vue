@@ -40,7 +40,7 @@ function fecharInfo() {
   <div class="form">
     <h1>Formulario</h1>
     <label for="nome">Nome</label> <br>
-    <input type="text" v-model="nome" required><br>
+    <input type="text" v-model="nome" Formulariorequired><br>
 
 
     <label for="email">email</label><br>
@@ -86,7 +86,15 @@ function fecharInfo() {
     <label for="">Cidade</label><br>
     <input type="text" v-model="cidade"><br>
     <label for="">Hobbies</label><br>
-    <input type="text" v-model="hobbies"><br>
+    <select v-model="hobbies">
+      <option value="">selecione seu hobbie</option>
+      <option value="Cozinhar">Cozinhar</option>
+      <option value="Praticar esportes">Praticar esportes</option>
+      <option value="Limpar a casa">Limpar a casa</option>
+      <option value="Ler">Ler</option>
+      <option value="Ouvir musica">Ouvir musica </option>
+      <option value="Outros">Outros</option>
+    </select><br>
     <label for="">Linguagens de programação</label><br>
     <input type="text" v-model="lingProg" required> <br>
     <label for="">Biografia</label><br>
@@ -124,24 +132,36 @@ function fecharInfo() {
 
 <style scoped>
 .form {
-  height: 650px;
-  width: 200px;
-  padding: 5%;
+  padding: 20%;
   color: aliceblue;
-  background-color: rgb(83, 117, 126);
-  border: 2px solid rgb(228, 228, 228);
-  border-radius: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #202020;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+select {
+  padding: 3%;
+  background-color: rgb(118, 118, 118);
+  color: aliceblue;
+  border: 2px solid rgb(118, 118, 118);
+}
+
+input {
+  padding: 3%;
+  background-color: rgb(118, 118, 118);
+  color: aliceblue;
+  border: 2px solid rgb(118, 118, 118);
+}
+
+textarea {
+  background-color: rgb(118, 118, 118);
+  color: aliceblue;
+  padding: 3%;
 }
 
 .mensagem {
-  height: 650px;
-  width: 200px;
-  padding: 5%;
+  padding: 20%;
   color: aliceblue;
-  background-color: rgb(83, 117, 126);
-  border: 2px solid rgb(228, 228, 228);
-  border-radius: 20px;
+  background-color: #202020;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 5%;
 }
@@ -149,43 +169,35 @@ function fecharInfo() {
 button {
   padding: 12%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: 2px solid rgb(228, 228, 228);
-  border-radius: 20px;
+  border: 1px solid rgb(228, 228, 228);
   color: aliceblue;
-  background-color: rgb(83, 117, 126);
+  background-color: #202020;
   font-size: large;
   margin-left: 15px;
 }
 
 .err {
-  height: 100px;
-  padding: 8%;
+  padding: 20%;
   color: aliceblue;
-  background-color: rgb(83, 117, 126);
-  border: 2px solid rgb(228, 228, 228);
-  border-radius: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 5%;
+  background-color: #202020;
+  margin-left: 7%;
 }
 
 .botaoerr {
-  padding: 5%;
+
+  padding: 3%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: 2px solid rgb(228, 228, 228);
+  border: 1px solid rgb(228, 228, 228);
   border-radius: 50%;
   color: aliceblue;
-  background-color: rgb(83, 117, 126);
+  background-color: #202020;
   font-size: large;
   margin-top: 3px;
 }
 
 .btInfo {
-  padding: 5%;
+  padding: 8%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: 0px solid;
-  color: aliceblue;
-  background-color: rgb(83, 117, 126);
-  font-size: large;
-  margin-top: 3px;
+  border: 1px solid aliceblue;
 }
 </style>
