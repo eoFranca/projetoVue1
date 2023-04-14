@@ -181,6 +181,7 @@ button {
   color: aliceblue;
   background-color: #202020;
   margin-left: 7%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .botaoerr {
